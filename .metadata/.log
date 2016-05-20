@@ -279,3 +279,39 @@ org.apache.http.client.HttpResponseException: Service Temporarily Unavailable
 	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
 	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
 	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-05-20 20:14:39.030
+!MESSAGE The POM for org.apache.maven.plugins:maven-clean-plugin:jar:2.5 is missing, no dependency information available
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2016-05-20 20:25:16.740
+!MESSAGE cacheFile=file:/home/joao/.eclipse/org.eclipse.platform_4.5.0_1473617060_linux_gtk_x86_64/configuration/org.eclipse.wst.server.discovery/serverAdapterSitesDetails.xml
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2016-05-20 20:25:16.747
+!MESSAGE cacheFile=file:/home/joao/.eclipse/org.eclipse.platform_4.5.0_1473617060_linux_gtk_x86_64/configuration/org.eclipse.wst.server.discovery/serverAdapterSitesDetails.xml
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2016-05-20 20:26:03.027
+!MESSAGE cacheFile=file:/home/joao/.eclipse/org.eclipse.platform_4.5.0_1473617060_linux_gtk_x86_64/configuration/org.eclipse.wst.server.discovery/serverAdapterSitesDetails.xml
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-05-20 20:29:27.893
+!MESSAGE Unable to retrieve a list of remote deployment scanners
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-05-20 20:29:28.034
+!MESSAGE Unable to retrieve a list of remote deployment scanners
+
+!ENTRY org.eclipse.ui 4 4 2016-05-20 20:33:34.609
+!MESSAGE Plug-in 'org.eclipse.pde.ui' contributed an invalid Menu Extension (Path: 'org.eclipse.ui.projectConfigure' is invalid): org.eclipse.pde.ui.ConvertedProjectWizard
+
+!ENTRY org.eclipse.ui 4 4 2016-05-20 20:33:35.085
+!MESSAGE Plug-in 'org.jboss.tools.jst.web.kb' contributed an invalid Menu Extension (Path: 'org.eclipse.ui.projectConfigure' is invalid): org.jboss.tools.web.kb.RemoveKBSupport
+
+!ENTRY org.eclipse.ui 4 4 2016-05-20 20:33:35.095
+!MESSAGE Plug-in 'org.jboss.tools.ws.jaxrs.ui' contributed an invalid Menu Extension (Path: 'org.eclipse.ui.projectConfigure' is invalid): org.jboss.tools.ws.jaxrs.configuration.addJaxrsConfigurationAction
+
+!ENTRY org.eclipse.ui 4 4 2016-05-20 20:33:35.305
+!MESSAGE Plug-in 'org.eclipse.pde.ui' contributed an invalid Menu Extension (Path: 'org.eclipse.ui.projectConfigure' is invalid): org.eclipse.pde.ui.ConvertedProjectWizard
+
+!ENTRY org.eclipse.ui 4 4 2016-05-20 20:33:35.337
+!MESSAGE Plug-in 'org.jboss.tools.jst.web.kb' contributed an invalid Menu Extension (Path: 'org.eclipse.ui.projectConfigure' is invalid): org.jboss.tools.web.kb.RemoveKBSupport
+
+!ENTRY org.eclipse.ui 4 4 2016-05-20 20:33:35.344
+!MESSAGE Plug-in 'org.jboss.tools.ws.jaxrs.ui' contributed an invalid Menu Extension (Path: 'org.eclipse.ui.projectConfigure' is invalid): org.jboss.tools.ws.jaxrs.configuration.addJaxrsConfigurationAction

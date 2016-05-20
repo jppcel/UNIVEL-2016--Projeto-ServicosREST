@@ -1,0 +1,69 @@
+<header ng-switch on="$location.path().indexOf('/Alunos/new') > -1">
+    <h3 ng-switch-when="true">Create a new Aluno</h3>
+    <h3 ng-switch-when="false">View or edit Aluno</h3>
+</header>
+<form id="AlunoForm" name="AlunoForm" class="form-horizontal" role="form">
+    
+
+    <div class="form-group" ng-class="{'has-error': AlunoForm.nome.$invalid}">
+        <label for="nome" class="col-sm-2 control-label">Nome</label>
+        <div id="nomeControls" class="col-sm-10">
+            <input id="nome" name="nome" type="text" class="form-control" ng-model="aluno.nome" placeholder="Enter the Aluno Nome"></input>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': AlunoForm.sobrenome.$invalid}">
+        <label for="sobrenome" class="col-sm-2 control-label">Sobrenome</label>
+        <div id="sobrenomeControls" class="col-sm-10">
+            <input id="sobrenome" name="sobrenome" type="text" class="form-control" ng-model="aluno.sobrenome" placeholder="Enter the Aluno Sobrenome"></input>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': AlunoForm.ra.$invalid}">
+        <label for="ra" class="col-sm-2 control-label">Ra</label>
+        <div id="raControls" class="col-sm-10">
+            <input id="ra" name="ra" type="text" class="form-control" ng-model="aluno.ra" placeholder="Enter the Aluno Ra"></input>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': AlunoForm.cpf.$invalid}">
+        <label for="cpf" class="col-sm-2 control-label">Cpf</label>
+        <div id="cpfControls" class="col-sm-10">
+            <input id="cpf" name="cpf" type="text" ng-maxlength="14" class="form-control" ng-model="aluno.cpf" placeholder="Enter the Aluno Cpf"></input>
+            <span class="help-block error" ng-show="AlunoForm.cpf.$error.maxlength">maximum length is 14</span>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': AlunoForm.rg.$invalid}">
+        <label for="rg" class="col-sm-2 control-label">Rg</label>
+        <div id="rgControls" class="col-sm-10">
+            <input id="rg" name="rg" type="text" ng-maxlength="15" class="form-control" ng-model="aluno.rg" placeholder="Enter the Aluno Rg"></input>
+            <span class="help-block error" ng-show="AlunoForm.rg.$error.maxlength">maximum length is 15</span>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': AlunoForm.rg_expeditor.$invalid}">
+        <label for="rg_expeditor" class="col-sm-2 control-label">Rg_expeditor</label>
+        <div id="rg_expeditorControls" class="col-sm-10">
+            <input id="rg_expeditor" name="rg_expeditor" type="text" ng-maxlength="150" class="form-control" ng-model="aluno.rg_expeditor" placeholder="Enter the Aluno Rg_expeditor"></input>
+            <span class="help-block error" ng-show="AlunoForm.rg_expeditor.$error.maxlength">maximum length is 150</span>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': AlunoForm.filiacao_pai.$invalid}">
+        <label for="filiacao_pai" class="col-sm-2 control-label">Filiacao_pai</label>
+        <div id="filiacao_paiControls" class="col-sm-10">
+            <input id="filiacao_pai" name="filiacao_pai" type="text" ng-maxlength="200" class="form-control" ng-model="aluno.filiacao_pai" placeholder="Enter the Aluno Filiacao_pai"></input>
+            <span class="help-block error" ng-show="AlunoForm.filiacao_pai.$error.maxlength">maximum length is 200</span>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button id="saveAluno" name="saveAluno" class="btn btn-primary" ng-disabled="isClean() || AlunoForm.$invalid" ng-click="save()"><span class="glyphicon glyphicon-ok-sign"></span> Save</button>
+            <button id="cancel" name="cancel" class="btn btn-default" ng-click="cancel()"><span class="glyphicon glyphicon-remove-sign"></span> Cancel</button>
+            <button id="deleteAluno" name="deleteAluno" class="btn btn-danger" ng-show="aluno.id" ng-click="remove()"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+        </div>
+    </div>
+</form>
